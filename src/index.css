@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+root {
+Primary: #0B2E6B;      /* Navy Blue */
+Secondary: #FF6B00;    /* Orange */
+bg: #F8FAFC;
+Success: #16A34A;
+
+  }
+  
+  body {
+  background: #f5f3ee;
+  font-family: Inter, sans-serif;
+  overflow-x: hidden;
+}
+
+.blob {
+  position: fixed;
+  border-radius: 50%;
+  filter: blur(60px);
+  opacity: 0.35;
+}
+
+.purple {
+  width: 300px;
+  height: 300px;
+  background: #7c3aed;
+  top: -50px;
+  left: -50px;
+}
+
+.orange {
+  width: 350px;
+  height: 350px;
+  background: #ff6b00;
+  bottom: 0;
+  right: 0;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.card {
+  background: rgba(255,255,255,0.8);
+  backdrop-filter: blur(10px);
+  padding: 25px;
+  border-radius: 25px;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #f8fafc;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+}
